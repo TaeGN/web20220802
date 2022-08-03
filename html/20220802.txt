@@ -15,3 +15,5 @@ https://desktop.github.com/
 https://github.com/sebaek
 
 h$*6>lorem - h1~h6까지 생성
+
+element, comment, headingm paragraph, text, entity
