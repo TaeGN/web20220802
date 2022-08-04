@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{
+            background-color: aqua;
+        }
+        /* child selector */
+        .error > p{
+            background-color: chartreuse;
+        }
+        div > p{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem amet repudiandae culpa doloremque totam obcaecati quo magnam architecto nostrum non assumenda illo eveniet nihil quam commodi voluptatem veritatis, blanditiis ullam?
+            </p>
+        </div>
+    </div>
+
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sunt nam debitis sint ipsum. Quam amet veniam, provident hic distinctio illum facere sunt cumque cum dolorem nostrum maiores nulla? Veritatis.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

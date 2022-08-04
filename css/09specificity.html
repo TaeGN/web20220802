@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            background-color: aqua;
+        }
+        .note{
+            background-color: brown;
+            text-align: right;
+        }
+        .error{
+            text-align: center;
+        }
+        .note.error{
+            background-color: blue;
+        }
+        #head1{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>specificity 명시도</h1>
+    <p>id=100</p>
+    <p>class=010</p>
+    <p>element=001</p>
+    <p>점수가 같으면 아래쪽 속성 적용</p>
+
+    <hr>
+
+    <h1 class="note error" id="head1">Lorem, ipsum.</h1>
+    <h1 class="note error">Illo, neque.</h1>
+    <h1 class="note error">Eveniet, dolorum.</h1>
+    <h1 class="note error">Minus, sit?</h1>
+    <h1 class="note error">Accusamus, accusantium?</h1>
+</body>
+</html>
