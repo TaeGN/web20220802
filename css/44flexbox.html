@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .flexbox {
+            display: flex;
+        }
+        #a {
+            background-color: white;
+        }
+        #b {
+            background-color: black;
+            color: white;
+        }
+        .flexbox > div {
+            font-size: 10px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        #a > div:hover {
+            background-color: rgb(8, 168, 29);
+        }
+        #b > div:hover {
+            background-color: rgb(63, 62, 62);
+        }
+        /* .flexbox > div:visited {
+            background-color: rgb(52, 187, 25);
+        } */
+        .aa {
+            margin-right: auto;
+        }
+        .r {
+            border-radius: 30px;
+            /* width: 50px; */
+            height: 12px;
+            text-align: center;
+        }
+        #r1 {
+            background-color: black;
+            color: white;
+            display: flex;
+        }
+        #r2 {
+            background-color: plum;
+        }
+        #r3 {
+            background-color: white;
+        }
+        #r4 {
+            background-color: green;
+            color: white;
+        }
+        #rr1 {
+            background-color: white;
+            color: black;
+            padding: 2px;
+        }
+        </style>
+</head>
+<body>
+    <div class="flexbox" id="a">
+        <div>Tutorial<i class="fa-solid fa-caret-down"></i></div>
+        <div>Reference<i class="fa-solid fa-caret-down"></i></div>
+        <div>Exercise<i class="fa-solid fa-caret-down"></i></div>
+        <div class="aa">Videos</div>
+        <div class="r" id="r1">Pro <div class="r" id="rr1">NEW</div></div>
+        <div class="r" id="r2">Get certified</div>
+        <div class="r" id="r3">Website</div>
+        <div class="r" id="r4">Log in</div>
+    </div>
+    <div class="flexbox" id="b">
+        <div><i class="fa-solid fa-house-chimney"></i></div>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JAVASCRIPT</div>
+        <div>SQL</div>
+        <div>PYTHON</div>
+        <div>PHP</div>
+        <div>BOOTSTRAP</div>
+        <div class="aa">HOW TO</div>
+        <div><i class="fa-solid fa-circle-half-stroke"></i></div>
+        <div><i class="fa-solid fa-earth-americas"></i></div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+</body>
+</html>
