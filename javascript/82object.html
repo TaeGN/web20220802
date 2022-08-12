@@ -11,23 +11,24 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        // 함수는 값이 될 수 있다.
-        let a = 3;
-        let b = "hello";
+        let a = {
+            name: "donald",
+            age: 40,
+            car: {
+                model: "tesla",
+                color: "white",
+                weight: 1000
+            }
+        };
 
-        function myfunc1() {
-            console.log("함수 내 실행코드...");
-        }
+        console.log(a);
+        console.log(a.car.color);
 
-        let c = myfunc1;
+        a.car.model = "sonata";
+        a.car.color = "black";
+        a.car.weight = 5000;
 
-        myfunc1();  // 함수 실행
-        c();        // 함수 실행
-
-        let d = function () {
-            console.log("d 함수 내 실행코드");
-        }
-        d();
+        console.log(a.car);
 
     </script>
 </body>

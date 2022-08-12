@@ -11,24 +11,25 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        // 함수는 값이 될 수 있다.
-        let a = 3;
-        let b = "hello";
+        let a = {
+            name: "donald",
+            score: [90, 91, 92, 93]
+        };
 
-        function myfunc1() {
-            console.log("함수 내 실행코드...");
+        let arr = [2, 3, 4];
+        console.log(arr[0]);
+        console.log(a.score[2]);
+        console.log(a);
+
+        console.log("for 사용");
+        for (let i = 0; i < a.score.length; i++) {
+            console.log(a.score[i]);
         }
 
-        let c = myfunc1;
-
-        myfunc1();  // 함수 실행
-        c();        // 함수 실행
-
-        let d = function () {
-            console.log("d 함수 내 실행코드");
-        }
-        d();
-
+        a.score = [5, 6, 7, 8]
+        console.log(a.score);
+        a.score.push(5);
+        console.log(a.score);
     </script>
 </body>
 </html>
