@@ -8,23 +8,21 @@
     
 </head>
 <body>
-    <img src="pic_bulboff.gif" alt="" id="img1">
-    <button id="btn1">켜기</button>   
-    <button id="btn2">끄기</button>   
+    <div id="container1"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        document.querySelector("#btn1").addEventListener("click", function() {
-            document.querySelector("#img1").setAttribute("src", "pic_bulbon.gif");
-            document.querySelector("#img1").setAttribute("title", "불이 켜짐");
-        })
-        document.querySelector("#btn2").addEventListener("click", function() {
-            document.querySelector("#img1").setAttribute("src", "pic_bulboff.gif");
-            document.querySelector("#img1").setAttribute("title", "불이 꺼짐");
-        })
-
-        // attribute 변경 : setAttribute
-        // attribute 읽기 : getAttribute
+        let h1elem = document.createElement("h1");
+        h1elem.textContent = "오늘은 화요일";
+        
+        let h2elem = document.createElement("h2");
+        h2elem.textContent = "내일은 수요일"
+        
+        let container1 = document.querySelector("#container1");
+        // append
+        // 종료태그 직전에 추가
+        container1.append(h1elem);
+        container1.append(h2elem);
 
     </script>
 </body>

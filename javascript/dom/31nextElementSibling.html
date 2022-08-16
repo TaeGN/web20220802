@@ -8,24 +8,52 @@
     
 </head>
 <body>
-    <img src="pic_bulboff.gif" alt="" id="img1">
-    <button id="btn1">켜기</button>   
-    <button id="btn2">끄기</button>   
-
+    <h1 id="head1">
+        1
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        2
+        Quaerat.
+    </h1>
+    <h1 id="head3">
+        3
+        Quam!
+    </h1>
+    <h1 id="head4">
+        4
+        Soluta.
+    </h1>
+    <h1 id="head5">
+        5
+        Quos?
+    </h1>
+    <h1 id="head6">
+        6
+        Ipsa?
+    </h1>
+    <h1 id="head7">
+        7
+        Corporis.
+    </h1>
+    <h1 id="head8">
+        8
+        Et.
+    </h1>
+    <h1 id="head9">
+        9
+        Voluptates.
+    </h1>
+    <h1 id="head10">
+        10
+        Sunt?
+    </h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        document.querySelector("#btn1").addEventListener("click", function() {
-            document.querySelector("#img1").setAttribute("src", "pic_bulbon.gif");
-            document.querySelector("#img1").setAttribute("title", "불이 켜짐");
-        })
-        document.querySelector("#btn2").addEventListener("click", function() {
-            document.querySelector("#img1").setAttribute("src", "pic_bulboff.gif");
-            document.querySelector("#img1").setAttribute("title", "불이 꺼짐");
-        })
-
-        // attribute 변경 : setAttribute
-        // attribute 읽기 : getAttribute
-
+        let head3 = document.querySelector("#head3");
+        head3.style.color =  "blue"
+        head3.nextElementSibling.style.color = "yellow"
+        head3.nextElementSibling.nextElementSibling.style.color = "green"
     </script>
 </body>
 </html>
